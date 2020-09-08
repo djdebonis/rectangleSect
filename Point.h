@@ -18,7 +18,7 @@ public:
     void setX(int _x);
     void setY(int _y);
 
-    friend ostream operator<<(ostream & out, const Point &pnt);
+    friend ostream & operator <<(ostream &out, const Point &pnt);
 
 };
 

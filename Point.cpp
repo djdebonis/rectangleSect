@@ -22,7 +22,7 @@ void Point::setY(int _y){
     y = _y;
 }
 
-ostream operator<<(const ostream & out, const Point &pnt){
+ostream & operator <<(ostream &out, const Point &pnt){
     out << "(" << pnt.getX() << ", " << pnt.getY() << ")";
     return out;
 }
