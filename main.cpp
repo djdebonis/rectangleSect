@@ -8,7 +8,7 @@ int main(){
 
     int xPoint = 5;
     int yPoint = 5;
-    Point tempPoint{xPoint,yPoint};
+    Point tempPoint(xPoint,yPoint);
 
     cout << tempPoint << endl;
 
