@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-#ifndef DEBONISDAVID_PA01
-#define DEBONISDAVID_PA01
+#ifndef POINT_H
+#define POINT_H
 
 class Point {
 private:
@@ -22,4 +22,4 @@ public:
 
 };
 
-#endif //DEBONISDAVID_PA01
+#endif //POINT_H

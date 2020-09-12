@@ -2,8 +2,8 @@
 #include <vector>
 using namespace std;
 
-#ifndef DEBONISDAVID_PA01
-#define DEBONISDAVID_PA01
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
 
 class Rectangle {
 private:
@@ -17,7 +17,7 @@ private:
     vector<Point> allPoints;
 
 public:
-    explicit Rectangle(Point _topLeftPnt, int _height=0, int _width=0); 
+    explicit Rectangle(Point _topLeftPnt, int _height=0, int _width=0);
 
     int getHeight() const; // accessor
     int getWidth() const; // accessor
@@ -27,3 +27,5 @@ public:
 	int getXMax() const;
     vector<Point> getRectanglePoints(); // accessor
 };
+
+#endif //RECTANGLE_H
