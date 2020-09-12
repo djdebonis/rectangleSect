@@ -33,7 +33,24 @@ Rectangle::Rectangle(Point _topLeftPoint, int _height=0, int _width=0){
     }
 
 }
-
-vector<Point> Rectangle::setRectanglePoints(){
-
+int Rectangle::getHeight(){
+	return height;
+}
+int Rectangle::getWidth(){
+	return width;
+}
+int Rectangle::getYMin(){
+	return yMin;
+}
+int Rectangle::getYMax(){
+	return yMax;
+}
+int Rectangle::getXMin(){
+	return xMin;
+}
+int Rectangle::getXMax(){
+	return xMax;
+}
+vector<Point> Rectangle::getRectanglePoints{
+	return allPoints;
 }

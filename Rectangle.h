@@ -21,6 +21,9 @@ public:
 
     int getHeight() const; // accessor
     int getWidth() const; // accessor
-
-    vector<Point> setRectanglePoints();
+	int getYMin() const; // accessor
+	int getYMax() const; //accessor
+	int getXMin() const;
+	int getXMax() const;
+    vector<Point> getRectanglePoints(); // accessor
 };
