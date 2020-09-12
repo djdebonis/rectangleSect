@@ -15,8 +15,8 @@ public:
     int getX() const; // accessor
     int getY() const; // accessor
 
-    void setX(int _x);
-    void setY(int _y);
+    void setX(int _x); // mutator
+    void setY(int _y); // mutator
 
     friend ostream & operator <<(ostream &out, const Point &pnt);
 

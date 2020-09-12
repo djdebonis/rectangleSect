@@ -10,9 +10,14 @@ private:
     Point topLeftPoint;
     int height;
     int width;
+    int xMin;
+    int xMax;
+    int yMax;
+    int yMin;
+    vector<Point> allPoints;
 
 public:
-    explicit Rectangle(Point _topLeftPnt, int _height=0, int _width=0);
+    explicit Rectangle(Point _topLeftPnt, int _height=0, int _width=0); 
 
     int getHeight() const; // accessor
     int getWidth() const; // accessor

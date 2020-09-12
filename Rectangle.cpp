@@ -1,15 +1,17 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle(Point _topLeftPnt, int _height=0, int _width=0){
-    topLeftPoint = _topLeftPnt;
+Rectangle::Rectangle(Point _topLeftPoint, int _height=0, int _width=0){
+    topLeftPoint = _topLeftPoint;
     height = _height;
     width = _width;
-}
+    xMin = topLeftPoint.getX();
+    xMax = xMin + width;
+    yMax = topLeftPoint.getY();
+    yMin = yMax - height;
 
-vector<Point> Rectangle::setRectanglePoints(){
-    vector<Point> points;
-    points.push_back(topLeftPoint);
-
+    // filling in the vector with all points of the rectangle
+    allPoints.push_back(topLeftPoint);
+    // points are assigned in clockwise order, then pushed back into vector
     for(int i = 0; i < 3; i++){
         point tempPoint();
         // if it's the top right point
@@ -22,11 +24,16 @@ vector<Point> Rectangle::setRectanglePoints(){
             tempPoint.setX(_x=(topLeftPoint.getX() + width));
             tempPoint.setY(_y=(topLeftPoint.getY() - height));
         }
+        // if it's the bottom left point
         else if (i == 2){
             tempPoint.setX(_x=(topLeftPoint.getX()));
             tempPoint.setY(_y=(topLeftPoint.getY() - height));
         }
         points.push_back(tempPoint);
-
     }
+
+}
+
+vector<Point> Rectangle::setRectanglePoints(){
+
 }
